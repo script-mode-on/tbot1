@@ -5,6 +5,7 @@ from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 from aiogram.types import ReplyKeyboardRemove
 from aiogram.dispatcher.filters import Command
 from aiogram.utils.callback_data import CallbackData
+import os
 
 TOKEN = ''
 bot = Bot(TOKEN)
