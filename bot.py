@@ -7,7 +7,7 @@ from aiogram.dispatcher.filters import Command
 from aiogram.utils.callback_data import CallbackData
 import os
 
-TOKEN = ''
+TOKEN = os.environ.get('BOT_TOKEN)
 bot = Bot(TOKEN)
 dp = Dispatcher(bot)
 
