@@ -604,15 +604,6 @@ async def buying_gan(
 	await call.message.answer(
 		text='куб Gan 365 I', 
 		reply_markup=gani_keyboard)
-
- @dp.callback_query_handler(
-	bot_callback.filter(item_name='gan356'))
-async def buying_gan(
-	call: CallbackQuery, callback_data: dict):
-	await call.answer(cache_time=60)
-	await call.message.answer(
-		text='кубы из категории Gan 356',
-		reply_markup=gan356m_keyboard)
 # валки
 @dp.callback_query_handler(
 	bot_callback.filter(item_name='valk'))
